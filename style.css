@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d26;
+    color: #e6e6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.game-container {
+    background-color: #1a1a40;
+    border: 3px solid #66f;
+    box-shadow: 0 0 20px rgba(102, 102, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+canvas {
+    background-color: #2e8b57;
+    border: 2px solid #333;
+    display: block;
+    margin: 20px auto;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.power-bar-container {
+    width: 300px;
+    height: 20px;
+    background-color: #444;
+    border: 1px solid #777;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.power-bar {
+    height: 100%;
+    width: 0;
+    background-color: #f00;
+    transition: width 0.1s linear;
+}
+
+.optimum-zone {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+#shootButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #66f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#shootButton:hover {
+    background-color: #44e;
+}
+
+.scoreboard {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/* Nuevos estilos para el botón de reinicio */
+.restart-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #66f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
